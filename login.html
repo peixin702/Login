@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录页面</title>
+	</head>
+	<script>
+		function login(){
+			 	var name = document.getElementById("username").value;
+			 	var pwd =  document.getElementById("password").value;
+             if(name == "") {
+                 alert("没有输入用户名！");
+                 
+             } else if(pwd == "") {
+                 alert("没有输入密码！");
+                
+             } else if(name == "scott" && pwd == "123456"){
+                 alert("提交成功！")
+                 window.location.href = "Update.html";
+                 
+             }else{
+             	alert("用户名密码输入错误")
+             }
+         }
+	</script>
+	<body>
+		
+		<table>
+			<tr>
+				<td colspan="2" align="center"> Login </td>
+			</tr>
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" id="username"/></td>
+			</tr>
+			<tr>
+				<td>密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+				<td><input type="password" id="password"/></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" onclick="login()" value="登录"/></td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
